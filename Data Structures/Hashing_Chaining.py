@@ -78,14 +78,6 @@ class LinkedList:
 
             return current_node
 
-    # Temporary traverse function for debugging
-    def traverse(self):
-        current_node = self.head
-
-        while current_node is not None:
-            print(current_node.key, ':', current_node.value)
-            current_node = current_node.next
-
 
 class Dictionary:
     def __init__(self):
@@ -191,6 +183,3 @@ class Dictionary:
 
         else:
             self.n -= 1
-D1['i'] = 8
-
-print(D1)
