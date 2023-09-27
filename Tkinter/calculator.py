@@ -1,3 +1,5 @@
+# __gold-init__
+
 import os
 from tkinter import *
 
