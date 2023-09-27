@@ -1,4 +1,4 @@
-# __gold-init
+# __gold-init__
 # Linked List
 
 class Node:
