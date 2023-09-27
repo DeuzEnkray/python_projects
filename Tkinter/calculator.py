@@ -84,13 +84,7 @@ def calc_div():
     display_format()
     calculator_screen.config(text=display_text)
 
-
-absolute_path = os.path.dirname(__file__)
-
 window = Tk()
-
-placeHolder = PhotoImage()
-icon = PhotoImage(file=absolute_path + '/photos/logo.png')
 
 window.geometry("370x580")
 window.title("Calculator")
