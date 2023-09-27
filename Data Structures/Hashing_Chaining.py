@@ -78,6 +78,14 @@ class LinkedList:
 
             return current_node
 
+    # Temporary traverse function for debugging
+    def traverse(self):
+        current_node = self.head
+
+        while current_node is not None:
+            print(current_node.key, ':', current_node.value)
+            current_node = current_node.next
+
 
 class Dictionary:
     def __init__(self):
@@ -130,7 +138,7 @@ class Dictionary:
         return abs(hash(key)) % self.size
 
     # Dynamically increases the size of the dictionary
-    def __rehash(self):
+    def __resize_dictionary(self):
         temp_buckets = self.buckets
         self.buckets = self.__make_buckets()
         self.n = 0
@@ -150,7 +158,7 @@ class Dictionary:
         if index is None:
             load_factor = self.n / self.size
             if load_factor >= 2:
-                self.__rehash()
+                self.__resize_dictionary()
 
             self.buckets[bucket_index].insert(key, value)
             self.n += 1
