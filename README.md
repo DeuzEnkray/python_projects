@@ -24,8 +24,8 @@
 <p>All data structures I have made till now.</p>
 <ul>
   <li>Linked List</li>
-  <li>Stack</li>
-  <li>Queue</li>
+  <li>Stack (Linked List Implementation)</li>
+  <li>Queue (Linked List Implementation)</li>
   <li>Hashing with Linear Probing</li>
   <li>Hashing with Chaining</li>
 </ul>
