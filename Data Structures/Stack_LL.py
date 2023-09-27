@@ -1,4 +1,4 @@
-# __gold-init
+# __gold-init__
 # Stack implementation using Linked Lists
 
 class Node:
