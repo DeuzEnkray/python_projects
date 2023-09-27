@@ -191,17 +191,6 @@ class Dictionary:
 
         else:
             self.n -= 1
-
-
-D1 = Dictionary()
-D1[1] = 10
-D1['b'] = 1
-D1['c'] = 2
-D1['d'] = 3
-D1['e'] = 4
-D1['f'] = 5
-D1['g'] = 6
-D1['h'] = 7
 D1['i'] = 8
 
 print(D1)
