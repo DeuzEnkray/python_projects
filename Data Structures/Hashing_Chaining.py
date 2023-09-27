@@ -110,17 +110,7 @@ class Dictionary:
                 continue
             else:
                 while node is not None:
-                    if type(node.key) in (int, float) and type(node.value) in (int, float):
-                        result += str(node.key) + ': ' + str(node.value) + ', '
-
-                    elif type(node.key) in (int, float) and type(node.value) not in (int, float):
-                        result += str(node.key) + ': ' + '\'' + str(node.value) + '\', '
-
-                    elif type(node.key) not in (int, float) and type(node.value) in (int, float):
-                        result += '\'' + str(node.key) + '\'' + ': ' + str(node.value) + ', '
-
-                    else:
-                        result += '\'' + str(node.key) + '\'' + ': ' + '\'' + str(node.value) + '\', '
+                    result += str(node.key) + ': ' + str(node.value) + ', '
                     node = node.next
 
         return '{' + result[:-2] + '}'
