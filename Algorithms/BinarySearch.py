@@ -1,5 +1,6 @@
 # __gold-init__
 # Binary Search
+# Only works with sorted arrays
 
 def binary_search(array, item):
     low = 0
