@@ -1,5 +1,5 @@
 # __gold-init__
-# Stack implementation using Linked Lists
+# Stack implementation using Linked List
 
 class Node:
     def __init__(self, data):
